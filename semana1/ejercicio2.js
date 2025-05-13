@@ -15,7 +15,8 @@ async function main() {
         console.log('No se cumplen los requisitos');
 
     }
+  }
 
-}
+
 
 main();

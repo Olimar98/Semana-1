@@ -48,7 +48,6 @@ async function main() {
   // console.log('Resta:', resta);
   // console.log('Multiplicación:', multi);
   // console.log('División:', div);
-  // TODO: Mostrar el resultado de la resta, multiplicación y división
 
 }
 
