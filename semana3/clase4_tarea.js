@@ -42,9 +42,10 @@ function Mayor(numeros){
 }
 
 
-function minimo(numeros){
+function todo(numeros){
 
-    
+    const promedio = Promedio(numeros);
+    let maximo = Mayor(numeros);
     let minimo = numeros[0];
 
 
@@ -66,8 +67,8 @@ async function main() {
     let alumno = [];
     let pregunta = '';
 
-    while (pregunta !== '4'){
-    pregunta = await ask("¿Que quieres hacer? \n1. Ver Alumnos \n2. Agregar Alumnos \n3. Ver calificaciones \n4. Salir \n");
+    while (pregunta !== '3'){
+    pregunta = await ask("¿Que quieres hacer? \n1. Ver Alumnos \n2. Agregar Alumnos \n3. Salir \n");
 
     if(pregunta === '1'){
 
@@ -75,7 +76,7 @@ async function main() {
             console.log('No hay alumnos');
             continue;
         }else{
-        console.log(`Alumno: ${alumno}\n`)
+        console.log(`Alumno: ${alumno}\n`);
         }
 
     }else if (pregunta === '2'){
@@ -93,16 +94,8 @@ async function main() {
                 console.log("No puede votar")
             }
 
-    }else if(pregunta === '3'){
 
-    console.log(`Promedio = ${Promedio(calificacion)}`);
-
-    console.log(`Mayor = ${Mayor(calificacion)}`);
-
-    console.log(`Minimo = ${minimo(calificacion)}`);
-
-
-    }else if (pregunta === '4'){
+    }else if (pregunta === '3'){
         console.log("Hasta luego");
     }else{
         console.log("Error");

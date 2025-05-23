@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+</head>
+<body>
+    <div class="container">
+        <h1> Student Manager </h1>
+        <div class="input-group">
+            <input type="text" id="nameInput" placeholder="Student name...">
+            <input type="number" id="gradeInput" placeholder="Grade (0-100)">
+            <button onclick="addStudent"></button>
+        </div>
+        <div class="results">
+            <h2>Student List</h2>
+            <ul id="studentList"></ul>
+            <p id="averageDisplay"><strong>Average Grade:</strong></p>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
